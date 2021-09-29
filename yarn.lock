@@ -3109,6 +3109,11 @@ css-declaration-sorter@^4.0.1:
     postcss "^7.0.1"
     timsort "^0.3.0"
 
+css-element-queries@^1.0.2:
+  version "1.2.3"
+  resolved "https://registry.npm.taobao.org/css-element-queries/download/css-element-queries-1.2.3.tgz#e14940b1fcd4bf0da60ea4145d05742d7172e516"
+  integrity sha1-4UlAsfzUvw2mDqQUXQV0LXFy5RY=
+
 css-loader@^3.5.3:
   version "3.6.0"
   resolved "https://registry.nlark.com/css-loader/download/css-loader-3.6.0.tgz#2e4b2c7e6e2d27f8c8f28f61bffcd2e6c91ef645"
@@ -4690,6 +4695,13 @@ globby@^9.2.0:
     pify "^4.0.1"
     slash "^2.0.0"
 
+golden-layout@^1.5.9:
+  version "1.5.9"
+  resolved "https://registry.nlark.com/golden-layout/download/golden-layout-1.5.9.tgz#a39bc1f6a67e6f886b797c016dd924e9426ba77f"
+  integrity sha1-o5vB9qZ+b4hreXwBbdkk6UJrp38=
+  dependencies:
+    jquery "*"
+
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0:
   version "4.2.8"
   resolved "https://registry.nlark.com/graceful-fs/download/graceful-fs-4.2.8.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fgraceful-fs%2Fdownload%2Fgraceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
@@ -5194,6 +5206,11 @@ interpret@^1.2.0:
   resolved "https://registry.nlark.com/interpret/download/interpret-1.4.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Finterpret%2Fdownload%2Finterpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
   integrity sha1-Zlq4vE2iendKQFhOgS4+D6RbGh4=
 
+intersection-observer@^0.5.0:
+  version "0.5.1"
+  resolved "https://registry.npm.taobao.org/intersection-observer/download/intersection-observer-0.5.1.tgz?cache=0&sync_timestamp=1607914497037&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fintersection-observer%2Fdownload%2Fintersection-observer-0.5.1.tgz#e340fc56ce74290fe2b2394d1ce88c4353ac6dfa"
+  integrity sha1-40D8Vs50KQ/isjlNHOiMQ1Osbfo=
+
 ip-regex@^2.1.0:
   version "2.1.0"
   resolved "https://registry.nlark.com/ip-regex/download/ip-regex-2.1.0.tgz#fa78bf5d2e6913c911ce9f819ee5146bb6d844e9"
@@ -5576,6 +5593,16 @@ javascript-stringify@^2.0.1:
   version "2.1.0"
   resolved "https://registry.nlark.com/javascript-stringify/download/javascript-stringify-2.1.0.tgz#27c76539be14d8bd128219a2d731b09337904e79"
   integrity sha1-J8dlOb4U2L0Sghmi1zGwkzeQTnk=
+
+jquery@*, jquery@^3.5.0:
+  version "3.6.0"
+  resolved "https://registry.nlark.com/jquery/download/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
+  integrity sha1-xyoJ8Vwb3OFC9J2/EXC9+K2sJHA=
+
+jquery@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.nlark.com/jquery/download/jquery-3.5.0.tgz#9980b97d9e4194611c36530e7dc46a58d7340fc9"
+  integrity sha1-mYC5fZ5BlGEcNlMOfcRqWNc0D8k=
 
 js-beautify@^1.6.12:
   version "1.14.0"
@@ -9204,6 +9231,14 @@ vue-eslint-parser@^7.0.0:
     lodash "^4.17.21"
     semver "^6.3.0"
 
+vue-golden-layout@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.npmmirror.com/vue-golden-layout/download/vue-golden-layout-2.1.1.tgz#dc80e00854592deb7135cb8a2171f00940be7513"
+  integrity sha1-3IDgCFRZLetxNcuKIXHwCUC+dRM=
+  dependencies:
+    jquery "^3.5.0"
+    vue-resize-directive "^1.2.0"
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.nlark.com/vue-hot-reload-api/download/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
@@ -9234,10 +9269,24 @@ vue-property-decorator@^9.1.2:
   resolved "https://registry.npm.taobao.org/vue-property-decorator/download/vue-property-decorator-9.1.2.tgz#266a2eac61ba6527e2e68a6933cfb98fddab5457"
   integrity sha1-JmourGG6ZSfi5oppM8+5j92rVFc=
 
+vue-resize-directive@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npm.taobao.org/vue-resize-directive/download/vue-resize-directive-1.2.0.tgz#4214ca8a80a425529b036ea868cad54a38f613e4"
+  integrity sha1-QhTKioCkJVKbA26oaMrVSjj2E+Q=
+  dependencies:
+    css-element-queries "^1.0.2"
+    intersection-observer "^0.5.0"
+    lodash.debounce "^4.0.8"
+
 vue-router@^3.2.0:
   version "3.5.2"
   resolved "https://registry.nlark.com/vue-router/download/vue-router-3.5.2.tgz?cache=0&sync_timestamp=1628495505697&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue-router%2Fdownload%2Fvue-router-3.5.2.tgz#5f55e3f251970e36c3e8d88a7cd2d67a350ade5c"
   integrity sha1-X1Xj8lGXDjbD6NiKfNLWejUK3lw=
+
+vue-storage-decorator@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/vue-storage-decorator/download/vue-storage-decorator-1.0.7.tgz#857e909cf7c593d6b9a8ae3fde20cd1f6eb2775d"
+  integrity sha1-hX6QnPfFk9a5qK4/3iDNH26yd10=
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.3"
