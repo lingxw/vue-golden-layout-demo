@@ -12,15 +12,15 @@
 }
 </style>
 <script lang="ts">
-import Vue from "vue";
-import { Component, Prop } from "vue-property-decorator";
+import Vue from 'vue';
+import { Component, Prop } from 'vue-property-decorator';
 
 export interface TreeBranch {
   readonly name: string;
   readonly children: TreeBranch[];
 }
 
-@Component({ name: "tree" })
+@Component({ name: 'tree' })
 export default class Tree extends Vue {
   @Prop() tree: TreeBranch;
 }

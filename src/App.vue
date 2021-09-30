@@ -23,14 +23,14 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import { Component } from "vue-property-decorator";
-import { letters } from "./router";
-import PHead from "./components/p-head.vue";
-import demoStack from "./components/demo-stack.vue";
-import Persistance from "vue-storage-decorator";
+import Vue from 'vue';
+import { Component } from 'vue-property-decorator';
+import { letters } from './router';
+import PHead from './components/p-head.vue';
+import demoStack from './components/demo-stack.vue';
+import Persistance from 'vue-storage-decorator';
 
-const Persist = Persistance("browserGL");
+const Persist = Persistance('browserGL');
 //Persist.persisting = false;
 @Component({ components: { PHead, demoStack } })
 export default class App extends Vue {
@@ -38,9 +38,9 @@ export default class App extends Vue {
   @Persist() demoStackState = {
     bottomSheet: false,
     stackSubs: [1],
-    ssId: 1,
+    ssId: 1
   };
-  @Persist() routes = [{ path: "/a" }];
+  @Persist() routes = [{ path: '/a' }];
   letters = letters;
 
   reset(): void {

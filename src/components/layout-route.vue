@@ -18,9 +18,9 @@
 </template>
 
 <script lang="ts">
-import { Component } from "vue-property-decorator";
-import { glCustomContainer } from "vue-golden-layout";
-import PHead from "./p-head.vue";
+import { Component } from 'vue-property-decorator';
+import { glCustomContainer } from 'vue-golden-layout';
+import PHead from './p-head.vue';
 
 @Component({ components: { PHead } })
 export default class LayoutRoute extends glCustomContainer {

@@ -1,17 +1,17 @@
-import Vue from "vue";
-import VueRouter, { RouteConfig } from "vue-router";
-import layoutRoute from "../components/layout-route.vue";
-export const letters = "abcdef";
+import Vue from 'vue';
+import VueRouter, { RouteConfig } from 'vue-router';
+import layoutRoute from '../components/layout-route.vue';
+export const letters = 'abcdef';
 
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
-    path: "/lr",
-    name: "spec-lr",
+    path: '/lr',
+    name: 'spec-lr',
     component: layoutRoute,
-    meta: { title: "Layout route" },
-  },
+    meta: { title: 'Layout route' }
+  }
 ];
 
 for (const l of letters) {
@@ -20,14 +20,14 @@ for (const l of letters) {
     name: `r-${l}`,
     path: `/${l}`,
     component: { template: `<p>test-${L}</p>` },
-    meta: { title: `${L}-test` },
+    meta: { title: `${L}-test` }
   });
 }
 
 const router = new VueRouter({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
-  routes,
+  routes
 });
 
 export default router;

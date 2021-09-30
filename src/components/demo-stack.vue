@@ -42,9 +42,9 @@
   </gl-row>
 </template>
 <script lang="ts">
-import { Component, Prop } from "vue-property-decorator";
-import { glCustomContainer } from "vue-golden-layout";
-import { letters } from "../router";
+import { Component, Prop } from 'vue-property-decorator';
+import { glCustomContainer } from 'vue-golden-layout';
+import { letters } from '../router';
 
 @Component
 export default class demoStack extends glCustomContainer {
@@ -53,9 +53,9 @@ export default class demoStack extends glCustomContainer {
     stackSubs: number[];
     ssId: number;
   };
-  testState: any = { text: "Nothing new" };
+  testState: any = { text: 'Nothing new' };
   letters = letters;
-  testText = "testing text.";
+  testText = 'testing text.';
   addStack(): void {
     this.state.stackSubs.push(++this.state.ssId);
   }
@@ -64,7 +64,7 @@ export default class demoStack extends glCustomContainer {
     if (~ndx) {
       this.state.stackSubs.splice(ndx, 1);
     } else {
-      console.assert(false, "Closed dynamic component is in the array");
+      console.assert(false, 'Closed dynamic component is in the array');
     }
   }
 }
