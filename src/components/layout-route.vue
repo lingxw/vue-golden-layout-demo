@@ -24,6 +24,6 @@ import PHead from './p-head.vue';
 
 @Component({ components: { PHead } })
 export default class LayoutRoute extends glCustomContainer {
-  checked: boolean;
+  checked = false;
 }
 </script>
