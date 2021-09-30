@@ -52,20 +52,20 @@ export default class App extends Vue {
 
 <style lang="less">
 body {
-	overflow: hidden; 	/* The 'light' theme let a scroll-bar on the right of the main container */
+  overflow: hidden; /* The 'light' theme let a scroll-bar on the right of the main container */
 }
 .hscreen {
-	width: 100vw;
-	height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 .reset {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	float: right;
-	z-index: 9000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  float: right;
+  z-index: 9000;
 }
 .reset:hover {
-	background-color: red;
+  background-color: red;
 }
 </style>

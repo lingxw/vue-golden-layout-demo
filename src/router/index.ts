@@ -20,7 +20,7 @@ for (const l of letters) {
     name: `r-${l}`,
     path: `/${l}`,
     component: { template: `<p>test-${L}</p>` },
-    meta: { title: `${L}-test` }
+    meta: { title: `${L}-test` },
   });
 }
 
